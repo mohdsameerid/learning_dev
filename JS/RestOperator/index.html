@@ -7,6 +7,8 @@
     <title>Document</title>
     <script>
         function Sum(){
+            console.log(arguments); // array of object
+            console.log(typeof arguments); // object
             let sum = 0;
             for(let i in arguments){
                 sum += arguments[i];
@@ -15,7 +17,8 @@
             document.write(sum+" <br>");
         }
         Sum(1,2);
-        Sum(100,200,300);
+        Sum("Atul",100,200,300);
+        
 
 
 
