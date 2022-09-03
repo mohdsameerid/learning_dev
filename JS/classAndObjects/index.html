@@ -8,14 +8,24 @@
 </head>
 <script>
     class student{
-        message(){
-            console.log("Hello people");
+        // contructor method
+        constructor(){
+            console.log(`
+             Automaticlly invoked function
+             constructor at the time of object 
+             creation`);
         }
+        // prototype method
+        message(){
+            console.log("prototype method");
+        }
+        
     }
 
     let s1 = new student();
     s1.message();
-    
+   
+
 </script>
 <body>
     
