@@ -9,23 +9,24 @@
 <script>
     class student{
         // contructor method
-        constructor(){
-            let name;
-            console.log(`
-               Automaticlly invoked function
-               constructor at the time of object 
-               creation`);
+        constructor(name, age){
+            this.studentname = name;
+            this.ages = age;
+            // console.log(`
+            //    Automaticlly invoked function
+            //    constructor at the time of object 
+            //    creation`);
         }
         // prototype method
         message(){
             console.log("prototype method");
-            console.log("student name is: "+this.name);
+            console.log("student name is: "+this.studentname+"and Age is: "+this.ages);
         }
         
     }
 
-    let s1 = new student();
-    s1.name = "samir";
+    let s1 = new student("Samir", 22);
+    
     s1.message();
    
 
