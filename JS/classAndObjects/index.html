@@ -10,19 +10,22 @@
     class student{
         // contructor method
         constructor(){
+            let name;
             console.log(`
-             Automaticlly invoked function
-             constructor at the time of object 
-             creation`);
+               Automaticlly invoked function
+               constructor at the time of object 
+               creation`);
         }
         // prototype method
         message(){
             console.log("prototype method");
+            console.log("student name is: "+this.name);
         }
         
     }
 
     let s1 = new student();
+    s1.name = "samir";
     s1.message();
    
 
