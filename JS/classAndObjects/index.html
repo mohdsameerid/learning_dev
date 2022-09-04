@@ -22,12 +22,20 @@
             console.log("prototype method");
             console.log("student name is: "+this.studentname+"and Age is: "+this.ages);
         }
-        
+        // static method
+        static staticMethod(){
+            console.log("static method");
+        }
     }
 
     let s1 = new student("Samir", 22);
+    let s2 = new student("Haseen", 22);
     
     s1.message();
+    s2.message();
+
+    // calling static method
+    student.staticMethod();
    
 
 </script>
