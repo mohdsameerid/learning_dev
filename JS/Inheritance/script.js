@@ -35,33 +35,51 @@
 
 
 // Manager and Employee Salary Distribution using inheritance
-class Employee{
-    constructor(emp,age,salary){
-        this.empname = emp;
-        this.age = age;
-        this.salary = salary;
-    }
-    message(){
-        document.write(`<h3>Employee Details</h3>
-                     Name: ${this.empname} <br>
-                     Age: ${this.age} <br>
-                     Salary: ${this.salary}`);
+// class Employee{
+//     constructor(emp,age,salary){
+//         this.empname = emp;
+//         this.age = age;
+//         this.salary = salary;
+//     }
+//     message(){
+//         document.write(`<h3>Employee Details</h3>
+//                      Name: ${this.empname} <br>
+//                      Age: ${this.age} <br>
+//                      Salary: ${this.salary}`);
+//     }
+// }
+
+// class Manager extends Employee{
+//     message(){
+//         let travalingAllowence = 1000;
+//         let homeAllowence = 4000;
+//         let totalSalary = this.salary + travalingAllowence + homeAllowence; 
+//         document.write(`<h3>Manager Details</h3>
+//                          Name: ${this.empname}<br>
+//                          Age: ${this.age}<br>
+//                          Salary: ${totalSalary}`);
+//     }
+// }
+// let obj = new Manager("Samir",22,21000);
+// let obj2 = new Employee("Aliasa", 25,21000);
+
+// obj.message();
+// obj2.message();
+
+
+// Multilevel Inheritance
+class Manager{
+    info(){
+        document.write("Message for Manager");
     }
 }
-
-class Manager extends Employee{
+class Employee extends Manager{
     message(){
-        let travalingAllowence = 1000;
-        let homeAllowence = 4000;
-        let totalSalary = this.salary + travalingAllowence + homeAllowence; 
-        document.write(`<h3>Manager Details</h3>
-                         Name: ${this.empname}<br>
-                         Age: ${this.age}<br>
-                         Salary: ${totalSalary}`);
+        document.write("Message for Employee");
     }
 }
-let obj = new Manager("Samir",22,21000);
-let obj2 = new Employee("Aliasa", 25,21000);
+class Test extends Employee{
 
-obj.message();
-obj2.message();
+}
+let obj = new Test();
+obj.info();
