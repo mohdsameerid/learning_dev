@@ -34,7 +34,7 @@
 // let obj = new C();
 
 
-// Manager and Employee Salary Distribution
+// Manager and Employee Salary Distribution using inheritance
 class Employee{
     constructor(emp,age,salary){
         this.empname = emp;
