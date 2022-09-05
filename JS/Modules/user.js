@@ -1,5 +1,13 @@
-export let str = "I am an Indian";
+let str = "I am an Indian";
 
-export function sayHi(name){
+ function sayHi(name){
     return `Hello ${name}`;
 }
+
+class user{
+    constructor(){
+        console.log("Constructor Method");
+    }
+}
+
+export {str, sayHi, user}; // shortcut for exporting things
