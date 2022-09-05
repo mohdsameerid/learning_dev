@@ -1,5 +1,8 @@
-import { sayHi } from "./user.js";
+import { str , sayHi } from "./user.js";
 
-let name = sayHi("Mohammad samir Idrishi");
-document.body.innerHTML = name;
+document.body.innerHTML =  str;  // display on HTML page
+console.log(str); // displaying on console
+
+document.body.innerHTML = sayHi("samir");
+console.log(sayHi("I am an indian"))
 
