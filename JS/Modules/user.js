@@ -1,3 +1,7 @@
+export default function(){
+    console.log("Default Function:)");
+} 
+
 let str = "I am an Indian";
 
  function sayHi(name){

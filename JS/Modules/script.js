@@ -1,4 +1,7 @@
 import { str, sayHi as hi, user } from "./user.js";
+import { default as func } from "./user.js";
+
+func();
 
 document.body.innerHTML =  str;  // display on HTML page
 console.log(str); // displaying on console
