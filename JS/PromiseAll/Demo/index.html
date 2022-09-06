@@ -17,8 +17,8 @@
         // promise 2
         let p2 = new Promise(function(resolve,reject){
             setTimeout(() => {
-                console.log(`Second promise resolved`);
-                resolve(20);
+                console.log(`Second promise failed`);
+                reject("Failed");
             },2000);
         });
 
@@ -36,11 +36,10 @@
             for(var i in result){
                 sum = sum + result[i];
             }
-            
             console.log(`Result of resolve promise: ${result}`);
             console.log(`Sum is: ${sum}`);
         }).catch((err) => {
-            console.log(`${err}`);
+            console.log(`Error: ${err}`);
         });
 
     </script>
