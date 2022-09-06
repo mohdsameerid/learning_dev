@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // promise 1
+        let p1 = new Promise(function(resolve,reject){
+            setTimeout(()=>{
+                console.log(`First promise resolved`);
+                resolve(10);
+            },1000);
+        });
+
+        // promise 2
+        let p2 = new Promise(function(resolve,reject){
+            setTimeout(() => {
+                console.log(`Second promise resolved`);
+                resolve(20);
+            },2000);
+        });
+
+        // promise 3
+        let p3 = new Promise(function (resolve, reject){
+            setTimeout( () => {
+                console.log(`Third promise Resolved`);
+                resolve(30);
+            },3000);
+        });
+
+        // promise.all([p1,p2,p3]) array ke andar p1,p2,p3 
+        Promise.all([p1,p2,p3]).then((result) => {
+           let  sum = 0;
+            for(var i in result){
+                sum = sum + result[i];
+            }
+            
+            console.log(`Result of resolve promise: ${result}`);
+            console.log(`Sum is: ${sum}`);
+        }).catch((err) => {
+            console.log(`${err}`);
+        });
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
