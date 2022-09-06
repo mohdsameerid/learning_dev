@@ -20,10 +20,12 @@
         let p2 = new Promise(promiseCall(20,"Second"));
         let p3 = new Promise(promiseCall(30,"Third"));
         let p4 = new Promise(promiseCall(40,"Four"));
+        let p5 = new Promise(function(resolve,reject){
+            reject("Fifth promise has been failed");
+        });
         
         
-        
-        Promise.all([p1,p2,p3,p4]).then( (result) => {
+        Promise.all([p1,p2,p3,p4,p5]).then( (result) => {
             var sum = 0;
             for(var key in result){
                 sum = sum + result[key];
