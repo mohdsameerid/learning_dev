@@ -5,6 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+
+        let promiseCall = function(returnData, message){
+            return function(resolve, reject){
+                setTimeout( () => {
+                    console.log(`${message} promise Has been Solved`);
+                    resolve(returnData);
+                }, returnData * 100);
+            }
+        };
+
+        let p1 = new Promise(promiseCall(10,"First"));
+        let p2 = new Promise(promiseCall(20,"Second"));
+        let p3 = new Promise(promiseCall(30,"Third"));
+        let p4 = new Promise(promiseCall(40,"Four"));
+        
+        
+        
+        Promise.all([p1,p2,p3,p4]).then( (result) => {
+            var sum = 0;
+            for(var key in result){
+                sum = sum + result[key];
+            }           
+            console.log(`Result: ${result}`);
+            console.log(`Total: ${sum}`);
+        }).catch( (err) => {
+            console.log(`Error: ${err}`);
+        });
+
+    </script>
 </head>
 <body>
     
