@@ -15,6 +15,14 @@
             return response.json();
         })
         .then((data) => {
+            // api data extract on DOM/document
+            for(var key in data){
+                document.write(`${key} <br>`);
+                document.write(`Name: ${data[key].name} <br>`);
+                document.write(`Username: ${data[key].username} `);
+                document.write(`Website: ${data[key].website} `);
+                document.write(`<br><br>`);
+            } 
             console.log(data);
         })
         .catch((err) => {
