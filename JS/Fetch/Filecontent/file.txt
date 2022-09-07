@@ -1,0 +1,1 @@
+Data of file.txt we will be using data with fetch method.

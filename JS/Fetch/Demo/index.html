@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // fetch data using fetch method
+        fetch("../Filecontent/file.txt")
+        .then((response) => {
+            return response.text();
+        }).then((data) => {
+            document.write(`<h1>${data}</h1>`);
+        }).catch((err) => {
+            console.log(err)
+        });
+
+
+        // short way 
+        fetch("../Filecontent/file.txt")
+        .then((response) => response.text())
+        .then((data) => document.write(`<h1>${data}</h1>`))
+        .catch((err) =>  console.log(err));
+        
+    </script>
+</body>
+</html>
