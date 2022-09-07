@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Samir",
+        "age": "212",
+        "city": "kanpur"
+    },
+    {
+        "name": "Naman",
+        "age": "221",
+        "city": "pune"
+    },
+    {
+        "name": "Haseen",
+        "age": "1910",
+        "city": "Z-square Mall"
+    }
+]
