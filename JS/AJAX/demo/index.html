@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Here we load data</p>
+    <button onclick="dataload()">click</button>
+
+    <script>
+        function dataload(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+                else if(this.readyState == 4 && this.status == 404){
+                    console.log("File not found");
+                }
+            }
+
+            xhttp.open('GET', "/AJAX/Filecontent/readme.txt", true);
+            xhttp.send();
+
+        }
+    </script>
+</body>
+</html>
