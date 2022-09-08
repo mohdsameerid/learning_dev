@@ -19,6 +19,12 @@
 
 
         // short way 
+        // What we did here was:
+        // Line 1: we got the data from the API, which returned a promise
+        // Line 2: We then got the .json() format of the data which is also a promise
+        // Line 3: We got our data which now returns JSON
+        // Line 4: We got the errors in case there are any
+
         // fetch("../Filecontent/file.txt")
         // .then((response) => response.text())
         // .then((data) => document.write(`<h1>${data}</h1>`))
