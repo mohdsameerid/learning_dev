@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Both React and ReactDOM are available over a CDN. -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Load Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>React</title>
+</head>
+<body>
+    <div id="Func"></div>
+
+    <script type="text/babel">
+
+       function Custom(){
+          return ( // jsx start
+             <h1>Hello</h1>
+          )
+       }
+       
+    //    console.log(Custom());
+       let selArea = document.getElementById('Func');
+       const root = ReactDOM.createRoot(selArea);
+
+       root.render(<Custom />);
+    </script>
+</body>
+</html>
