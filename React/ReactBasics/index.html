@@ -19,17 +19,62 @@
 
     <script type="text/babel">
 
-       function Custom(){
-          return ( // jsx start
-             <h1>Hello</h1>
-          )
-       }
-       
-    //    console.log(Custom());
-       let selArea = document.getElementById('Func');
-       const root = ReactDOM.createRoot(selArea);
+      // functional components
+   //     function Custom(){
+   //        return ( // jsx start
+   //           <h1>Hello</h1>
+   //        )
+   //     }
+   //     function Custom1(){
+   //        return ( // jsx start
+   //           <h1>Hello2</h1>
+   //        )
+   //     }
+   //     function Parent(){
+   //       return(
+   //          <React.Fragment>
+   //             <Custom/>
+   //             <Custom1/>
+   //          </React.Fragment>    
+   //       );
+   //     }
 
-       root.render(<Custom />);
+       
+   //  //    console.log(Custom());
+   //     let selArea = document.getElementById('Func');
+   //     const root = ReactDOM.createRoot(selArea);
+
+   //    //  root.render(<Custom />); // functional components call
+   //    //  root.render(<Custom1/>);
+   //    root.render(<Parent/>);
+
+
+        function Myh1(){
+         return( // jsx start
+            <h1>Hello I am H1</h1>
+         );
+        }           // default value jab name ni milga tab Amit
+        function Welcome({name="Amit"}){
+         return( // jsx start
+            <h2>My H2 and String is: {name}</h2>
+         );
+        }
+
+        function Parent(){
+         return(
+            <React.Fragment>
+              <Myh1 />
+              <Welcome/> 
+              <Welcome name="Samir"/>
+            </React.Fragment>
+         );
+        }
+
+        let sel = document.querySelector("#Func");
+        let root = ReactDOM.createRoot(sel);
+      //   root.render(<Myh1/>);
+      //   root.render(<Myh2/>);
+           root.render(<Parent/>);
     </script>
 </body>
 </html>
