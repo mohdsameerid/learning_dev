@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* margin-top: 50px;
+            margin-left: 50px; */
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+            
+        }
+        div>*{
+            font-size: 40px;
+            display: inline;
+            padding: 20px;
+        }
+        .reset{
+            /* display: block; */
+            /* font-size: 40px;    
+            padding: 20px; */
+            /* text-align: center; */
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <button class = "incre" onclick="Increment()" > + </button>
+        <h1 class="count"></h1>
+        <button class ="dcre" onclick="Dcrement()"> - </button>
+
+        <!-- reset -->
+        <button class="reset" onclick="Reset()">Reset</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
