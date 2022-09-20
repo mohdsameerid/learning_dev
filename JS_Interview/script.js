@@ -47,4 +47,12 @@ if(null == 0){
 }
  // output -> world
 
+ // ques (2)
+ if(null === 0){
+    console.log("hello");
+}else{
+    console.log("world");
+}
+// output -> world
+
 
