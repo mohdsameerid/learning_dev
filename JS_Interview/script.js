@@ -56,3 +56,26 @@ if(null == 0){
 // output -> world
 
 
+if(null === null){
+    console.log("hello");
+}else{
+    console.log("world");
+}
+// output -> hello
+
+if(null == null){
+    console.log("hello");
+}else{
+    console.log("world");
+}
+// output -> hello
+
+var va = null;
+undefined
+console.log(typeof(a));
+// output -> object
+undefined
+var va = 10;
+undefined
+console.log(typeof(a));
+// output -> number
