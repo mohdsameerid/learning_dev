@@ -36,3 +36,15 @@ console.log(uniqueArr);  // [1, 2, 3, 8]
 let char = ['a','b','c','s','a','d','a'];
 let uniqueChar = [...new Set(char)];
 console.log(uniqueChar); // ['a', 'b', 'c', 's', 'd']
+
+
+
+// ques (1)
+if(null == 0){
+    console.log("hello");
+}else{
+    console.log("world");
+}
+ // output -> world
+
+
