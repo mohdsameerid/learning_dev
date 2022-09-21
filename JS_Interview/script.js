@@ -88,7 +88,7 @@ var kkk;
 // output -> 1
 
 
-console.log(kkk);
-kkk = 1;
-var kkk;
+console.log(p);
+p = 1;
+var p;
 // output -> 1
