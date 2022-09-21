@@ -79,3 +79,16 @@ var va = 10;
 undefined
 console.log(typeof(a));
 // output -> number
+
+
+
+kkk = 1;
+console.log(kkk);
+var kkk;
+// output -> 1
+
+
+console.log(kkk);
+kkk = 1;
+var kkk;
+// output -> 1
