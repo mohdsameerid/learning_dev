@@ -128,8 +128,14 @@ for(let i = 0; i < arr.length-1; i++){
 }
 console.log(newArr); // [ 1, 3, 4, 5, 6, 7, 2, 9, 43 ]
 
-// After Removing Duplicate data, Now Sort Data.
+// After Removing Duplicate data, Now Sort Data in increasing order.
 newArr.sort(function (a, b){
     return a - b;
 });
 console.log(newArr); // [ 1, 2, 3, 4, 5, 6, 7, 9, 43 ]
+
+//  Now Sort Data in Decreasing order.
+newArr.sort(function (a, b){
+    return b - a;
+});
+console.log(newArr); // [ 43, 9, 7, 6, 5, 4, 3, 2, 1 ]
