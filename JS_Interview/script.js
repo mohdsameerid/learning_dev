@@ -119,17 +119,17 @@ console.log(SumCon());
 /////////////////////////////////////////////////////////////////////////////////////////////
 // Remove Duplicacy from Array
 let arr = [1,1,3,4,5,6,7,1,2,4,5,3,6,7,9,43,7,9,5,3];
-console.log(arr);
+console.log(arr);     // [ 1, 1, 3, 4, 5, 6, 7, 1, 2, 4, 5, 3, 6, 7, 9, 43, 7, 9, 5, 3 ]
 let newArr = [];
 for(let i = 0; i < arr.length-1; i++){
     if(!newArr.includes(arr[i])){
         newArr.push(arr[i]);
     }
 }
-console.log(newArr); 
+console.log(newArr); // [ 1, 3, 4, 5, 6, 7, 2, 9, 43 ]
 
 // After Removing Duplicate data, Now Sort Data.
 newArr.sort(function (a, b){
     return a - b;
 });
-console.log(newArr);
+console.log(newArr); // [ 1, 2, 3, 4, 5, 6, 7, 9, 43 ]
