@@ -113,3 +113,23 @@ for(let i = 0; i <= arr.length-3; i++){
 }
 console.log(SumCon());
 // true
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+// Remove Duplicacy from Array
+let arr = [1,1,3,4,5,6,7,1,2,4,5,3,6,7,9,43,7,9,5,3];
+console.log(arr);
+let newArr = [];
+for(let i = 0; i < arr.length-1; i++){
+    if(!newArr.includes(arr[i])){
+        newArr.push(arr[i]);
+    }
+}
+console.log(newArr); 
+
+// After Removing Duplicate data, Now Sort Data.
+newArr.sort(function (a, b){
+    return a - b;
+});
+console.log(newArr);
