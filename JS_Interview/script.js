@@ -207,4 +207,14 @@ let filter = Nums.filter((ele) => {
 console.log(filter);   // [ 6, 7 ]
 
 // reduce 
+let ArrNum = [145, 45, 10, 20];
+let Reduce = ArrNum.reduce((ac, ele) => {
+   return ac - ele;  
+});
+console.log(Reduce);  // 70
 
+let ArrNum2 = [145, 45, 10, 20, 90];
+let Reduce2 = ArrNum2.reduce((ac, ele) => {
+   return ac - ele;  
+});
+console.log(Reduce2); // -20
