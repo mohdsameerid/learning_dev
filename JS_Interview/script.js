@@ -200,11 +200,20 @@ let Num = Nums.map((ele) => {
 });
 console.log(Num); // [ 2, 4, 6, 8, 10, 10, 12, 14 ]
 
-// filter 
+// filter with Array 
 let filter = Nums.filter((ele) => {
     return ele > 5;
 })
 console.log(filter);   // [ 6, 7 ]
+
+// filter with Array object 
+const someArray = [
+    { id: 1, name: "John" }, 
+    { id: 2, name: "Smith" },
+    { id: 3, name: "Bob" },
+    ];
+let val = someArray.filter((ele) =>  ele.name === "Bob" ); 
+console.log(val);   // [ { id: 3, name: 'Bob' } ]
 
 // reduce 
 let ArrNum = [145, 45, 10, 20];
