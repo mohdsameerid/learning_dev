@@ -188,3 +188,23 @@ console.log(charArr[2]); // Sameer
 let charArr2 = ["Sameer", "Haseen", "Naman", "amir", "Atif"];
 console.log(charArr2.reverse());  // [ 'Atif', 'amir', 'Naman', 'Haseen', 'Sameer' ]
 console.log(charArr2.reverse());  // [ 'Sameer', 'Haseen', 'Naman', 'amir', 'Atif' ]
+
+
+
+///////////////////////////////////map /////////////////////////////////////////
+let Nums = [1,2,3,4,5,5,6,7];
+
+// map 
+let Num = Nums.map((ele) => {
+    return (ele * 2);
+});
+console.log(Num); // [ 2, 4, 6, 8, 10, 10, 12, 14 ]
+
+// filter 
+let filter = Nums.filter((ele) => {
+    return ele > 5;
+})
+console.log(filter);   // [ 6, 7 ]
+
+// reduce 
+
