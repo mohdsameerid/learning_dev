@@ -218,3 +218,38 @@ let Reduce2 = ArrNum2.reduce((ac, ele) => {
    return ac - ele;  
 });
 console.log(Reduce2); // -20
+
+
+////////////////////////// findIndex ///////////////////////////////////////////////
+// 1) Using the Array findIndex() method with a simple array example
+let ranks = [1, 5, 7, 8, 10, 7];
+let index = ranks.findIndex(rank => rank === 7);
+console.log(index); // 2
+
+// 2) Using the Array findIndex() method with a more complex condition
+let Ranks = [279,18,392,200,18,303,30,4020,42];
+let Rank = Ranks.findIndex((elem, idx) => {
+    return elem == 18 && idx > 2;
+});
+console.log(Rank); //  4
+
+// Using the Array findIndex() method with an array of objects
+let product = [
+    {  name: "Android" , price: 2000 },
+    {  name: "iphone" , price: 5000 },
+    {  name: "Tablet", price: 6000 },
+   ];
+let idx = product.findIndex((ele) =>  {
+  return  ele.price > 5000;
+   });
+console.log(idx);
+
+
+const products = [
+  { name: 'Phone', price: 999 },
+  { name: 'Computer', price: 1999 },
+  { name: 'Tablet', price: 995 },
+];
+const inde = products.findIndex(product => product.price > 1000);
+console.log(inde); // 1
+
