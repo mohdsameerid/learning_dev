@@ -139,3 +139,32 @@ newArr.sort(function (a, b){
     return b - a;
 });
 console.log(newArr); // [ 43, 9, 7, 6, 5, 4, 3, 2, 1 ]
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+////// pattern program using javascript //////////////
+
+function pattern(num){
+    let r = num;
+    let nstar = 1;
+    let string = "";
+    for(let r = 1; r <= num; r++){
+        //stars
+        for(let s = 1; s <= nstar; s++){
+            // console.log("*");
+            string += "*";
+        }
+        //line change
+        // console.log("\n");
+        string += "\n";
+        // prepration for the next row
+        if(r <= num/2){
+            nstar++;
+        }else{
+            nstar--;
+        }
+    }
+    console.log(string);
+}
+
+pattern(5);
