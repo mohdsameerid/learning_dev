@@ -174,12 +174,17 @@ function pattern(num){
 
 pattern(5);
 
-///////////////////// array reverse /////////////////////////
+///////////////////// array reverse ///////////////////////////////////////////
 
 const nums = [1,2,3,4,5];
 console.log(nums.reverse());   //  [ 5, 4, 3, 2, 1 ]
-
 let charArr = ["Sameer", "Haseen", "Naman"];
 console.log(charArr[2]); // Naman
 console.log(charArr.reverse());  // [ 'Naman', 'Haseen', 'Sameer' ]
 console.log(charArr[2]); // Sameer
+
+
+
+let charArr2 = ["Sameer", "Haseen", "Naman", "amir", "Atif"];
+console.log(charArr2.reverse());  // [ 'Atif', 'amir', 'Naman', 'Haseen', 'Sameer' ]
+console.log(charArr2.reverse());  // [ 'Sameer', 'Haseen', 'Naman', 'amir', 'Atif' ]
