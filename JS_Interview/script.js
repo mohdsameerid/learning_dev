@@ -292,3 +292,10 @@ console.log(names.concat(rollno)); /// [ 'samir', 'Haseen', 'Amir', 1, 2, 3 ]
 console.log(names.indexOf("Amir")); // 2
 console.log(names.indexOf("Naman")); // -1
  
+
+////////////////////////// diff b/w indexOf and findIndex //////////////////////
+// indexOf me hm direct ele ka idx pta krte hai
+console.log(names.indexOf("Amir")); // 2
+
+// findIndex me hm condition lga kr idx pta krte hai
+console.log(names.findIndex(ele => ele == "Amir")); // 2
