@@ -200,6 +200,7 @@ let Num = Nums.map((ele) => {
 });
 console.log(Num); // [ 2, 4, 6, 8, 10, 10, 12, 14 ]
 
+
 // filter with Array 
 let filter = Nums.filter((ele) => {
     return ele > 5;
@@ -214,6 +215,7 @@ const someArray = [
     ];
 let val = someArray.filter((ele) =>  ele.name === "Bob" ); 
 console.log(val);   // [ { id: 3, name: 'Bob' } ]
+
 
 // reduce 
 let ArrNum = [145, 45, 10, 20];
@@ -262,3 +264,19 @@ const products = [
 const inde = products.findIndex(product => product.price > 1000);
 console.log(inde); // 1
 
+
+
+/////////////////////// filter and find method diff ///////////////////
+const Array = [
+    { id: 1, name: "John" }, 
+    { id: 2, name: "Smith" },
+    { id: 3, name: "Bob" },
+    ];
+let fil = Array.filter((ele) =>  ele.name === "Bob" ); 
+console.log(fil);  
+// [ { id: 3, name: 'Bob' } ]  
+
+
+let fin = someArrayArray.find((ele) => ele.name === "Bob" );
+console.log(fin);  
+// { id: 3, name: 'Bob' }
