@@ -118,12 +118,12 @@ console.log(SumCon());
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 // Remove Duplicacy from Array
-let arr = [1,1,3,4,5,6,7,1,2,4,5,3,6,7,9,43,7,9,5,3];
-console.log(arr);     // [ 1, 1, 3, 4, 5, 6, 7, 1, 2, 4, 5, 3, 6, 7, 9, 43, 7, 9, 5, 3 ]
+let num = [1,1,3,4,5,6,7,1,2,4,5,3,6,7,9,43,7,9,5,3];
+console.log(num);     // [ 1, 1, 3, 4, 5, 6, 7, 1, 2, 4, 5, 3, 6, 7, 9, 43, 7, 9, 5, 3 ]
 let newArr = [];
-for(let i = 0; i < arr.length-1; i++){
-    if(!newArr.includes(arr[i])){
-        newArr.push(arr[i]);
+for(let i = 0; i < num.length-1; i++){
+    if(!newArr.includes(num[i])){
+        newArr.push(num[i]);
     }
 }
 console.log(newArr); // [ 1, 3, 4, 5, 6, 7, 2, 9, 43 ]
@@ -143,6 +143,11 @@ console.log(newArr); // [ 43, 9, 7, 6, 5, 4, 3, 2, 1 ]
 ////////////////////////////////////////////////////////////////////////////////////////
 
 ////// pattern program using javascript //////////////
+// *
+// **
+// ***
+// **
+// *
 
 function pattern(num){
     let r = num;
