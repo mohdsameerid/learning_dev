@@ -280,3 +280,15 @@ console.log(fil);
 let fin = someArrayArray.find((ele) => ele.name === "Bob" );
 console.log(fin);  
 // { id: 3, name: 'Bob' }
+
+
+
+//////////////////////////concat method //////////////////////////////
+let names = ["samir", "Haseen", "Amir"];
+let rollno = [1,2,3];
+console.log(names.concat(rollno)); /// [ 'samir', 'Haseen', 'Amir', 1, 2, 3 ]
+
+// indexOf method 
+console.log(names.indexOf("Amir")); // 2
+console.log(names.indexOf("Naman")); // -1
+ 
