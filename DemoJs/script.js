@@ -61,3 +61,6 @@ function Dcrement(){
         count.innerHTML = val;
     }
 }
+function Reset(){
+    count.innerHTML = 0;
+}
