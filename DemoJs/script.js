@@ -71,17 +71,32 @@ function Reset(){
 let c = document.querySelector(".c");
 c.innerHTML = 0;
 let v;
-function p(){
+// function p(){
+//     v = document.querySelector(".c").innerHTML;
+//     v++;
+//     c.innerHTML = v;
+//     console.log(v);
+// }
+// function m(){
+//     v =  document.querySelector(".c").innerHTML;
+//     if(v > 0){
+//       v--;
+//       c.innerHTML = v;
+//     }
+//     console.log(v);
+// }
+let p = document.querySelector(".p");
+p.addEventListener("click", ()=>{
     v = document.querySelector(".c").innerHTML;
     v++;
     c.innerHTML = v;
-    console.log(v);
-}
-function m(){
-    v =  document.querySelector(".c").innerHTML;
+});
+let m = document.querySelector(".m");
+m.addEventListener("click", ()=>{
+    v = document.querySelector(".c").innerHTML;
     if(v > 0){
-      v--;
-      c.innerHTML = v;
+        v--;
     }
-    console.log(v);
-}
+
+    c.innerHTML = v;
+})
