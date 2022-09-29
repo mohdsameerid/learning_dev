@@ -64,3 +64,24 @@ function Dcrement(){
 function Reset(){
     count.innerHTML = 0;
 }
+
+
+
+// counter with div tag
+let c = document.querySelector(".c");
+c.innerHTML = 0;
+let v;
+function p(){
+    v = document.querySelector(".c").innerHTML;
+    v++;
+    c.innerHTML = v;
+    console.log(v);
+}
+function m(){
+    v =  document.querySelector(".c").innerHTML;
+    if(v > 0){
+      v--;
+      c.innerHTML = v;
+    }
+    console.log(v);
+}
