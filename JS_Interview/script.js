@@ -230,6 +230,14 @@ let Reduce2 = ArrNum2.reduce((ac, ele) => {
 });
 console.log(Reduce2); // -20
 
+// console.log("Hello World");
+
+let price = [1,2,3,6,3,5];
+let totalSum = price.reduce((totalPrice, currentPrice) => {
+    return totalPrice = totalPrice + currentPrice
+})
+console.log(totalSum); //20
+
 
 ////////////////////////// findIndex ///////////////////////////////////////////////
 // 1) Using the Array findIndex() method with a simple array example
