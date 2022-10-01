@@ -362,3 +362,14 @@ console.log(nums);
    // ["Samir","Haseen","Naman","Amit","Amir", "Shubham","Dev"]
 console.log(nums.sort());
   // [ 'Amir', 'Amit', 'Dev', 'Haseen', 'Naman', 'Samir', 'Shubham' ]
+
+
+let nu = [399,4,5,27,45,9,6,2,6,9,1,21,1,4,7,0,2,1];
+let num1 = nu.sort(function(a,b){
+    return a - b
+})
+console.log(num1); // [ 0, 1, 1, 1, 2, 2, 4, 4, 5, 6, 6, 7, 9, 9, 21, 27, 45, 399 ]
+let num2 = nu.sort(function(a,b){
+    return b - a
+})
+console.log(num2); // [ 399, 45, 27, 21, 9, 9, 7, 6, 6, 5, 4, 4, 2, 2, 1, 1, 1, 0 ]
