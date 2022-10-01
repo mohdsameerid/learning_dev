@@ -347,3 +347,11 @@ let newAr = numb2.every(ele => {
     return ele === 2
 })
 console.log(newAr) // false
+
+
+///////////////////////////////// includes() //////////////////////////////////////////
+
+let numbers2 = ["Samir","Haseen","Naman","Amit","Amir", "Shubham","Dev"];
+
+console.log(numbers2.includes("Naman")); // True 
+console.log(numbers2.includes("Chandan")); // false
