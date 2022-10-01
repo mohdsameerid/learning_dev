@@ -323,3 +323,27 @@ let mixedArray = [1,2,"three", "four", 5, 6, 9, "s"];
 mixedArray.forEach((ele) => {
     process.stdout.write(`${ele} `);
 })
+
+ /////////////////////// some() and evrey()
+let mixArray = [1,2,"three", "four", 5, 6, 9, "s"];
+let d = mixArray.some(ele => {
+    return ele === "s"
+})
+console.log(d); // true
+let s = mixArray.some(ele => {
+    return ele === "ssss"
+})
+console.log(s); // false
+
+
+let numb = [1,1,1,1,1,1];
+let newA = numb.every(ele => {
+    return ele === 1
+})
+console.log(newA) // true
+
+let numb2 = [1,1,1,1,1,1];
+let newAr = numb2.every(ele => {
+    return ele === 2
+})
+console.log(newAr) // false
