@@ -316,3 +316,10 @@ console.log(names.indexOf("Amir")); // 2
 
 // findIndex me hm condition lga kr idx pta krte hai
 console.log(names.findIndex(ele => ele == "Amir")); // 2
+
+
+//////////////////////////////////print element in same line ////////////////////
+let mixedArray = [1,2,"three", "four", 5, 6, 9, "s"];
+mixedArray.forEach((ele) => {
+    process.stdout.write(`${ele} `);
+})
