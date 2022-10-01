@@ -201,13 +201,22 @@ let Num = Nums.map((ele) => {
 console.log(Num); // [ 2, 4, 6, 8, 10, 10, 12, 14 ]
 
 
-// filter with Array 
+/////////////////////////////////// filter with Array  ////////////////////////////////
 let filter = Nums.filter((ele) => {
     return ele > 5;
 })
 console.log(filter);   // [ 6, 7 ]
 
-// filter with Array object 
+ // filter
+let n = [1,"two",3,"four"];
+let filterArray = n.filter((element) => {
+    return typeof(element) == 'string'
+})
+console.log(filterArray); // [ 'two', 'four' ]
+console.log(n); // [ 1, 'two', 3, 'four' ]
+console.log(n.filter(ele => typeof(ele) == 'number')); // [ 1, 3 ]
+
+////////////////////////// filter with Array object ///////////////////////////////
 const someArray = [
     { id: 1, name: "John" }, 
     { id: 2, name: "Smith" },
