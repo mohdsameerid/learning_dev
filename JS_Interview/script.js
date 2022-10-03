@@ -431,3 +431,21 @@ function trimLeftSpace() {
     return trimStr;
  }
  console.log(trimLeftSpace())
+
+
+ function trimLeftSpace(str) {
+    var doneTrimming = false
+    var ret = ""
+    for (var index = 0; index < str.length; index++) {
+        if(str[index] !== ' '){
+            doneTrimming = true
+        }
+        if(doneTrimming){
+            ret += str[index]
+        }
+    }
+    return ret;
+}
+
+var result = trimLeftSpace("   Angry Bird   ");
+console.log(result);
