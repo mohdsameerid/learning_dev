@@ -412,3 +412,22 @@ for(let i = 0; i<lis.length; i++){
     }
 }
 console.log(ar);
+
+
+
+// ///////////////// remove space from string using split() /////////////////////////////
+function trimLeftSpace() {
+    var str = "   Angry Bird   ";
+    var splitTrim = str.split('');
+    var trimStr = "";
+    console.log(splitTrim);
+    for (var index = 0; index < splitTrim.length; index++) { //trim left space
+        if(splitTrim[index] == " ") {
+            // trimStr += str[index];
+        }else{
+            trimStr += str[index];
+        }
+    }
+    return trimStr;
+ }
+ console.log(trimLeftSpace())
