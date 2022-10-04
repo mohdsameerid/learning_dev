@@ -16,8 +16,7 @@ let person2 = {
     age: 22,
     course: "Mtech",
 };
-
-// function borrowing OR call method 
+/////////////////// function borrowing OR call method ///////////////////////
 // person.printDetails.call(person2);
 
 /// output 
@@ -27,7 +26,8 @@ let person2 = {
 //  Hassen
 
 
-// apply (apply me array hi pas kr dete hai)
+
+////////////////////////////// apply (apply me array hi pas kr dete hai) //////////////////////
 person.printDetails.call(person2,"kanpur","India","Male");
 person.printDetails.apply(person2,["Lucknow","India","Male"]);
 
@@ -36,3 +36,15 @@ person.printDetails.apply(person2,["Lucknow","India","Male"]);
 //  And other details: kanpur India Male
 // {name: 'Hassen', age: 22, course: 'Mtech'}
 //  And other details: Lucknow India Male
+
+
+
+/////////////////////////////////////// Bind /////////////////////
+// bind exactly same hai call() ki traha bas bind() me reference of copy milti hai
+let BindDetails = person.printDetails.bind(person2,"Ahamdabad","india","Male");
+console.log(BindDetails);
+// ƒ (city, country, gender){
+//     console.log(this);
+//     console.log("And other details: "+city+" "+country+" "+gender);
+// }
+BindDetails();
