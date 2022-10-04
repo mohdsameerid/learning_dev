@@ -48,3 +48,5 @@ console.log(BindDetails);
 //     console.log("And other details: "+city+" "+country+" "+gender);
 // }
 BindDetails();
+// {name: 'Hassen', age: 22, course: 'Mtech'}age: 22course: "Mtech"name: "Hassen"[[Prototype]]: Object
+// And other details: Ahamdabad india Male
