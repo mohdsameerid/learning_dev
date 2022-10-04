@@ -16,7 +16,9 @@ let person2 = {
     age: 22,
     course: "Mtech",
 };
-/////////////////// function borrowing OR call method ///////////////////////
+
+// Function borrowing ---->
+///////////////////  call method ///////////////////////
 // person.printDetails.call(person2);
 
 /// output 
