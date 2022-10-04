@@ -8,8 +8,21 @@
 //   sayHi();
 //   // ans -> undefined , ReferenceError
 //  ------------------------------------------------------------ 
+//  Q1)
+function Pet(name) {
+  this.name = name;
+  this.getName = () => this.name;
+}
+const cat = new Pet('Fluffy');
+console.log(cat.getName());// What is logged? 
+const { getName } = cat;
+console.log(getName()); // What is logged? 
+// output -> 
+// Fluffy
+// Fluffy
 
-//ques(1)-
+
+//ques(2)-
 // const object = {
 //   message: 'Hello, World!',
 //   logMessage() {
@@ -34,17 +47,17 @@
 
 
 // Q4)
-const object3 = {
-  who: 'World',
-  greet() {
-      return `Hello, ${this.who}!`;
-  },
-  farewell: () => {
-      return `Goodbye, ${this.who}!`;
-  }
-};
-console.log(object3.greet()); // What is logged? 
-console.log(object3.farewell()); // What is logged? 
+// const object3 = {
+//   who: 'World',
+//   greet() {
+//       return `Hello, ${this.who}!`;
+//   },
+//   farewell: () => {
+//       return `Goodbye, ${this.who}!`;
+//   }
+// };
+// console.log(object3.greet()); // What is logged? 
+// console.log(object3.farewell()); // What is logged? 
 // outout -> 
 // Hello, World!
 // Goodbye, undefined!
