@@ -16,3 +16,10 @@ console.log(reverseby)
 //hello my name -> h,e,l,l,o,,m,y,,n,a,m,e -> e,m,a,n,,y,m,,o,l,l,e,h -> eman ym olleh -> 
 //  eman ym olleh -> eman,ym,olleh -> olleh,ym,eman -> olleh ym eman
 // 
+
+///////////////// filter array //////////////////////////
+// input -> ["a","sss","","","","aaa","ss","","s","","","S","s"];
+// output -> ["a","sss","","aaa","ss","","s","","S","s"];
+let arr = ["a","sss","","","","aaa","ss","","s","","","S","s"];
+let arr2 = arr.filter(Boolean);
+console.log(arr2)
