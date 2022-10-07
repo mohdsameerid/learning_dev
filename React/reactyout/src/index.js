@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
    <div className='box'>
-    <h1>Hello My name is {name}</h1>
+    <h1 className='h'>Hello My name is {name}</h1>
 
     <div className='images'>
       <img className='img' src={img1} />
