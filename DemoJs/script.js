@@ -46,31 +46,31 @@
 //     // console.log(countnum);
 // }
 
-let count = document.querySelector(".count");
-count.innerHTML = 0;
-let val;
-function Increment(){
-    val = document.querySelector(".count").innerHTML;
-    val++;
-    count.innerHTML = val;
-}
-function Dcrement(){
-    val = document.querySelector(".count").innerHTML;
-    if(val > 0){
-        val--;
-        count.innerHTML = val;
-    }
-}
-function Reset(){
-    count.innerHTML = 0;
-}
+// let count = document.querySelector(".count");
+// count.innerHTML = 0;
+// let val;
+// function Increment(){
+//     val = document.querySelector(".count").innerHTML;
+//     val++;
+//     count.innerHTML = val;
+// }
+// function Dcrement(){
+//     val = document.querySelector(".count").innerHTML;
+//     if(val > 0){
+//         val--;
+//         count.innerHTML = val;
+//     }
+// }
+// function Reset(){
+//     count.innerHTML = 0;
+// }
 
 
 
 // counter with div tag
-let c = document.querySelector(".c");
-c.innerHTML = 0;
-let v;
+// let c = document.querySelector(".c");
+// c.innerHTML = 0;
+// let v;
 // function p(){
 //     v = document.querySelector(".c").innerHTML;
 //     v++;
@@ -85,18 +85,45 @@ let v;
 //     }
 //     console.log(v);
 // }
-let p = document.querySelector(".p");
-p.addEventListener("click", ()=>{
-    v = document.querySelector(".c").innerHTML;
-    v++;
-    c.innerHTML = v;
-});
-let m = document.querySelector(".m");
-m.addEventListener("click", ()=>{
-    v = document.querySelector(".c").innerHTML;
-    if(v > 0){
-        v--;
-    }
+// let p = document.querySelector(".p");
+// p.addEventListener("click", ()=>{
+//     v = document.querySelector(".c").innerHTML;
+//     v++;
+//     c.innerHTML = v;
+// });
+// let m = document.querySelector(".m");
+// m.addEventListener("click", ()=>{
+//     v = document.querySelector(".c").innerHTML;
+//     if(v > 0){
+//         v--;
+//     }
 
-    c.innerHTML = v;
-})
+//     c.innerHTML = v;
+// })
+
+/////////////////////////////////////////////////////////////////////////////
+let c = document.querySelector(".count");
+c.innerHTML = 0;
+let val;
+
+function Increment(){
+    val = document.querySelector(".count").innerHTML;
+    val++;
+    c.innerHTML = val;
+    console.log(val);
+}
+
+function Dcrement(){
+    val = document.querySelector(".count").innerHTML;
+    if(val > 0){
+        val--;
+        c.innerHTML = val;
+        console.log(val);
+    }
+}
+
+function Reset(){
+    // val = document.querySelector(".count").innerHTML;
+    // val = 0;
+    c.innerHTML = 0;
+}
