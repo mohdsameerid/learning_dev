@@ -102,9 +102,9 @@
 // })
 
 /////////////////////////////////////////////////////////////////////////////
-let c = document.querySelector(".count");
-c.innerHTML = 0;
-let val;
+// let c = document.querySelector(".count");
+// c.innerHTML = 0;
+// let val;
 
 // function Increment(){
 //     val = document.querySelector(".count").innerHTML;
@@ -122,26 +122,45 @@ let val;
 //     }
 // }
 
-function Reset(){
-    // val = document.querySelector(".count").innerHTML;
-    // val = 0;
-    c.innerHTML = 0;
-}
+// function Reset(){
+//     // val = document.querySelector(".count").innerHTML;
+//     // val = 0;
+//     c.innerHTML = 0;
+// }
 
 
-let p = document.querySelector(".incre");
-p.addEventListener("click", ()=>{
-    val = document.querySelector(".count").innerHTML;
+// let p = document.querySelector(".incre");
+// p.addEventListener("click", ()=>{
+//     val = document.querySelector(".count").innerHTML;
+//     val++;
+//     c.innerHTML = val;
+//     console.log(val);
+// })
+
+// let m = document.querySelector(".dcre");
+// m.addEventListener("click", ()=>{
+//     val = document.querySelector(".count").innerHTML;
+//     if(val > 0){
+//         val--;
+//         c.innerHTML = val;
+//     } 
+// })
+
+///////////////////////////////////////////////////////////////////////////////////
+
+let c = document.querySelector(".c");
+c.innerHTML = 0;
+let val;
+
+function p(){
+    val = document.querySelector(".c").innerHTML;
     val++;
     c.innerHTML = val;
-    console.log(val);
-})
-
-let m = document.querySelector(".dcre");
-m.addEventListener("click", ()=>{
-    val = document.querySelector(".count").innerHTML;
+}
+function m(){
+    val = document.querySelector(".c").innerHTML;
     if(val > 0){
         val--;
         c.innerHTML = val;
-    } 
-})
+    }
+}
