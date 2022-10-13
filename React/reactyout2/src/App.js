@@ -1,9 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Movie from './Components/Movie.js';
+import './Components/Movie.css';
 
-function App() {
+function App(props) {
+  console.log(props)
   return (
-   <h1 style={{textAlign: "center"}}>List of All the netflex Series</h1>
+    <>
+     <div className='main'>
+       <div className='box'>
+         <img src={props.imglink} />
+         <div className='card-info'>
+           <p> {props.title}</p>
+           <p> {props.language}</p>
+           <button> Watch now </button>
+         </div> 
+       </div> 
+     </div>
+    </>
   );
 }
 
