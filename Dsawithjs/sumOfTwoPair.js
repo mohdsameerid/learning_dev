@@ -17,6 +17,7 @@
 
 
 // Improving this code to O(n) using two pointer Approach //
+//  work here only in sorted array //
 
 function sumOfTwoPair(Array){
     let left = 0;
