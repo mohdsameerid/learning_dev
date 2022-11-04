@@ -2,7 +2,7 @@
 // [1,2,3,4,5,6] -> input 
 // [6,5,4,3,2,1] -> output
 
-function reverse(Array){
+function reverseArray(Array){
     let left = 0;
     let right = Array.length-1;
 
@@ -16,4 +16,8 @@ function reverse(Array){
     }
     return Array;
 }
-console.log(reverse([1,2,3,4,5,6]));
+console.log(reverseArray([1,2,3,4,5,6]));
+
+//Reverse Array Using inbuilt Method
+let arr = [6,5,4,3,2,1];
+console.log(arr.reverse());
