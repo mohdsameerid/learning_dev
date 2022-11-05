@@ -8,7 +8,7 @@
 // Anagram String  // -> output 
 
 function anagram(str1, str2){
-    if(str1.length != str2.length){  // both string checking 
+    if(str1.length != str2.length){  // both string length checking 
         return false;
     }
     
