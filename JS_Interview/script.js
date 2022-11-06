@@ -150,7 +150,6 @@ console.log(newArr); // [ 43, 9, 7, 6, 5, 4, 3, 2, 1 ]
 // *
 
 function pattern(num){
-    let r = num;
     let nstar = 1;
     let string = "";
     for(let r = 1; r <= num; r++){
@@ -193,15 +192,20 @@ console.log(charArr2.reverse());  // [ 'Sameer', 'Haseen', 'Naman', 'amir', 'Ati
 
 ///////////////////////////////////map /////////////////////////////////////////
 let Nums = [1,2,3,4,5,5,6,7];
-
+let numberse = [5,5,5,5,5,5,5,5,5,5];
 // map 
-let Num = Nums.map((ele) => {
+let Num = numberse.map((ele) => {
     return (ele * 2);
 });
 console.log(Num); // [ 2, 4, 6, 8, 10, 10, 12, 14 ]
 
+let numbers = [1,2,3,4,5,6,7,8,9,10];
+let ns = numbers.map(ele => ele > 5)
+console.log(ns); // [ false, false, false, false, false, true, true, true, true, true ]
+
 
 /////////////////////////////////// filter with Array  ////////////////////////////////
+// Nums = [ 2, 4, 6, 8, 10, 10, 12, 14 ]
 let filter = Nums.filter((ele) => {
     return ele > 5;
 })
@@ -215,6 +219,8 @@ let filterArray = n.filter((element) => {
 console.log(filterArray); // [ 'two', 'four' ]
 console.log(n); // [ 1, 'two', 3, 'four' ]
 console.log(n.filter(ele => typeof(ele) == 'number')); // [ 1, 3 ]
+
+
 
 ////////////////////////// filter with Array object ///////////////////////////////
 const someArray = [
