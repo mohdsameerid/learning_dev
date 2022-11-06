@@ -221,6 +221,38 @@ console.log(n); // [ 1, 'two', 3, 'four' ]
 console.log(n.filter(ele => typeof(ele) == 'number')); // [ 1, 3 ]
 
 
+//////////////////////////////Seprate number and array /////////////////////////////////////
+let numchar = ["one",2,"three",6,3,493,30,"hello",'s',33];
+function filt(Array){
+    let newArr = [];
+    let newArraynumber = [];
+    
+    // 1) way to Achieve 
+    // for(let i = 0; i < Array.length; i++){
+    //     // console.log(Array[i])
+    //     let tpystr = typeof(Array[i]);
+    //     let tpynum = typeof(Array[i]);
+    //     if(tpystr === 'string'){
+    //         newArr.push(Array[i]);
+    //         // console.log("h")
+    //     }
+    //     if(tpynum === 'number'){
+    //         newArraynumber.push(Array[i]);
+    //     }
+    // }
+    
+    // 2) way to Achieve 
+    newArr = Array.filter(ele => {
+        return typeof(ele) == "string"
+    })
+    newArraynumber = Array.filter(ele => {
+        return typeof(ele) == "number"
+    })
+    let con = newArr.concat(newArraynumber);
+    return con;
+}
+console.log(filt(numchar)); // [ 'one', 'three', 'hello', 's', 2, 6, 3, 493, 30, 33 ]
+
 
 ////////////////////////// filter with Array object ///////////////////////////////
 const someArray = [
