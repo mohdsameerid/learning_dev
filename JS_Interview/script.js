@@ -96,22 +96,22 @@ var p;
 
 //////////// 3 consecutive element of array sum //////////////////
 ////////////  * if sum is 7 return true else false/////////////// 
-let arr2 = [2,3,1,3,5,2,0];
-function SumCon(){
-let flag = false;
-let sum = 0;
-for(let i = 0; i <= arr.length-3; i++){
-    sum = arr2[i] + arr2[i+1] + arr2[i+2];
+function SumCon(arr,n){
+for(let i = 0; i < arr.length-n+1; i++){
+    let sum = 0;
+    // console.log("i : "+arr[i])
+    for(let j = 1; j <= n; j++){
+        sum = sum + arr[i+j];
+        // console.log(sum)
+    }
     if(sum == 7){
-        // console.log(`${arr[i]} + ${arr[i+1]} + ${arr[i+2]}`);
-        // console.log(true);
-        flag = true;
-        return flag;
-        break;
+        return true;
     }
 }
+return false;
 }
-console.log(SumCon());
+let res = SumCon([2,3,8,3,5,2,0],3);
+console.log(res);
 // true
 
 
