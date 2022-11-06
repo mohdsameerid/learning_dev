@@ -308,7 +308,7 @@ let product = [
 let idx = product.findIndex((ele) =>  {
   return  ele.price > 5000;
    });
-console.log(idx);
+console.log(idx); // 2
 
 
 const products = [
