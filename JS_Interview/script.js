@@ -332,7 +332,7 @@ console.log(fil);
 // [ { id: 3, name: 'Bob' } ]  
 
 
-let fin = someArrayArray.find((ele) => ele.name === "Bob" );
+let fin = Array.find((ele) => ele.name === "Bob" );
 console.log(fin);  
 // { id: 3, name: 'Bob' }
 
@@ -417,18 +417,18 @@ console.log(num2); // [ 399, 45, 27, 21, 9, 9, 7, 6, 6, 5, 4, 4, 2, 2, 1, 1, 1, 
 
 ////////////////////////////////digit frequency ////////////////////////////////////////
 
-// let nums = [10,2,1,4,1,4,7,3,1,1,31,1,1,3,2];
-// let target = 111111111;
-// let count = 0;
-// nums.forEach((ele) => {
-//     if(ele == target){
-//         count++;
-//     }
-// });
-// if(count > 0)
-// console.log(count);
-// else
-// console.log("-1");
+let numberArray = [10,2,1,4,1,4,7,3,1,1,31,1,1,3,2];
+let target = 111111111;
+let count = 0;
+numberArray.forEach((ele) => {
+    if(ele == target){
+        count++;
+    }
+});
+if(count > 0)
+console.log(count);
+else
+console.log("-1");
 
 
 
@@ -437,7 +437,7 @@ console.log(num2); // [ 399, 45, 27, 21, 9, 9, 7, 6, 6, 5, 4, 4, 2, 2, 1, 1, 1, 
 let lis = ["sasm", "dsadas", "d", "", "", "", "" , "ad", "ad", "", "", "", "", "dsad", "","daa", "a","",""];
 let ar = [];
 let flag = true;
-for(let i = 0; i<lis.length; i++){
+for(let i = 0; i  <lis.length; i++){
     if(lis[i] == ""){
         if(flag){
             ar[i] = "";
