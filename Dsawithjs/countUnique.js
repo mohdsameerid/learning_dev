@@ -1,6 +1,7 @@
 // problem -- 
 // [1,1,2,3,4,4,5,6,7,7,8] -> input 
-// [1,2,3,4,5,6,7,8] -> output 
+//   [1,2,3,4,5,6,7,8] ->
+//   8  -> output 
 
 
 // (1) Approach for Count unique Numbers ..
@@ -29,7 +30,8 @@ console.log(res2);
 // problem 
 // i  j
 // [1,2,3,4,5,6,7,8,7,7,8] -> input 
-// [1,2,3,4,5,6,7,8] -> output 
+// [1,2,3,4,5,6,7,8] ->
+// 8 ->  output 
 
 // (2) Approach for Count unique Number (only for Sorted Array)
 // start with i = 0 and (j = 1 to iterate array)
