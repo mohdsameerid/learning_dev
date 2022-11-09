@@ -497,3 +497,18 @@ for(let i = str.length-1; i >= 0; i--){
     newString += str[i];
 }
 console.log(newString);
+
+///////////////////////////////Remvome Duplicacy from Array//////////////////////////////
+let numbe = [1,2,4,2,1,3,1,2,1,3,342]
+let counters = {};
+let newArray = [];
+for(let items of numbers){
+    counters[items] = (counters[items] || 0) + 1;
+}
+let i = 0;
+for(let elem in counters){
+    newArray[i] = elem;
+    i++;
+}
+console.log("Orignal Numbers  : "+numbers);
+console.log("Revome duplicacy : "+newArray);
