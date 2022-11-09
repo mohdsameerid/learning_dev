@@ -11,13 +11,13 @@ function binarySearch(Array, d){
     while(l <= h){
         let  mid = Math.floor((l + h)/2);
        
-        if(d > Array[mid]){
+        if(d > Array[mid]){  // agar data bada hai mid se 
             l = mid+1;
         }
-        else if(d < Array[mid]){
+        else if(d < Array[mid]){ // agar data chota hai mid se
             h = mid-1;
         }
-        else{
+        else{  // data same mid se
         //    console.log(mid);
             return true;
         }
