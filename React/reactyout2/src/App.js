@@ -8,6 +8,7 @@ function App(props) {
   return (
     <>
      <div className='main'>
+
        <div className='box'>
          <img src={props.imglink} />
          <div className='card-info'>
@@ -16,6 +17,7 @@ function App(props) {
            <button> Watch now </button>
          </div> 
        </div> 
+       
      </div>
     </>
   );
