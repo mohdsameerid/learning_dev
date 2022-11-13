@@ -8,5 +8,5 @@
     }
     return sum;
  }
- let res = arr([1,2,3,4]);
+ let res = arr([1,2,3,4,5]);
  console.log(res); // 10
