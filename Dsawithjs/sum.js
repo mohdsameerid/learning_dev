@@ -1,3 +1,4 @@
+ // problem -> Sum of Elements in Array 
  // [1,2,3,4] -> input 
  // 10 -> output 
 
@@ -10,3 +11,6 @@
  }
  let res = arr([1,2,3,4,5]);
  console.log(res); // 10
+
+
+
