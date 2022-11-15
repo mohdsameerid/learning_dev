@@ -54,14 +54,20 @@
 
 
 //////////////////////////////////////////////////////////////////////////////////
-const arr = ["grapes"];
-// console.log(arr);
+// const arr = ["grapes"];
+// // console.log(arr);
 
-let array = new Array();
-console.log(array);
-let obj = new Object();
-console.log(obj)
-const func = new Function();
-console.log(func)
+// let array = new Array();
+// console.log(array);
+// let obj = new Object();
+// console.log(obj)
+// const func = new Function();
+// console.log(func)
 
 
+//////////////////////////////// Creating Our own function show Array////////////////////////////////////////
+Array.prototype.show= function(){
+    return this;
+}
+const cities = ["Kanpur"];
+console.log(cities.show())
