@@ -71,3 +71,17 @@ Array.prototype.show= function(){
 }
 const cities = ["Kanpur"];
 console.log(cities.show())
+
+
+
+//////////////creating our own prototype for conversion of Array to object///////////////
+let country = ["India", "pakistan", "America"];
+Array.prototype.convertArrayToObject= function(){
+    let obj = {};
+    this.forEach((ele, idx) => {
+       obj[idx] = ele;
+    })
+    return obj;
+}
+console.log(country);
+console.log(country.convertArrayToObject());
