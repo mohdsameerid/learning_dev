@@ -13,15 +13,15 @@
 // use of prototype in object
 //      --> obj2 > (rollno:20 aur prototype bhej raha hai obj ka) 
 //      --> and obj > (name: Samir aur inbuild obj property )
-const obj = {
-    name: "Samir"
-}
-// console.log(obj)
-const obj2 = {
-    rollno: "20",
-    __proto__:obj
-}
-console.log(obj2.name) // Samir
+// const obj = {
+//     name: "Samir"
+// }
+// // console.log(obj)
+// const obj2 = {
+//     rollno: "20",
+//     __proto__:obj
+// }
+// console.log(obj2.name) // Samir
 
 
 
@@ -44,5 +44,9 @@ const obj4 = {
     // name : "Amit",
     __proto__:obj3
 }
-console.log(obj4.getRollNo()) // 20
-console.log(obj4.getName()) //  Samir
+const obj5 = {
+    class : "MCA",
+    __proto__:obj4
+}
+console.log(obj5.getRollNo()) // 20
+console.log(obj5.getName()) //  Samir
