@@ -10,6 +10,7 @@
 
 
 // (3)
+// use of prototype in object
 //      --> obj2 > (rollno:20 aur prototype bhej raha hai obj ka) 
 //      --> and obj > (name: Samir aur inbuild obj property )
 const obj = {
