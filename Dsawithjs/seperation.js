@@ -1,3 +1,5 @@
+// problem  -> Separation of String to vowels and consonents
+ 
 // String = "Muhammad Samir"   (input) 
 // consonents -> MhmmdSmr, vowels -> uaaai  (ouput)
 
