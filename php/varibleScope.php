@@ -30,6 +30,7 @@ and can only be accessed within that function -->
 <!-- PHP The global Keyword -->
 <!-- The global keyword is used to access a global variable from within a function.
 To do this, use the global keyword before the variables (inside the function) -->
+<!-- (Also used for updation like ($y's value)) -->
 <?php
   $x = 10;
   $y = 15;
@@ -40,4 +41,20 @@ To do this, use the global keyword before the variables (inside the function) --
   }
   abc();
   echo $y; // 25
+?>
+
+
+
+<!-- $GLOBALS[index] -->
+<!-- Also used for updation value  -->
+<?php
+$x = 5;
+$y = 10;
+
+function myTest() {
+  $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
+}
+
+myTest();
+echo $y; // outputs 15
 ?>
