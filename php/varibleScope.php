@@ -10,3 +10,20 @@ and can only be accessed outside a function -->
   }
   abc();
 ?>
+
+
+<!-- local scope  -->
+<!-- A variable declared within a function has a LOCAL SCOPE 
+and can only be accessed within that function -->
+
+<?php
+  $text = "Samir";
+  function abc(){
+    $text = "Apple";
+    echo "Inside a function : $text";
+  }
+
+  abc();
+?>
+
+
