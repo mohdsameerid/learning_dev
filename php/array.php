@@ -39,3 +39,17 @@ $cars[2] = "Toyota";
 $cars = array("Volvo", "BMW", "Toyota");
 echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
 ?>
+
+<!-- Loop Through an Indexed Array
+To loop through and print all the values of an indexed array, you could use a for loop, like this: -->
+
+<!-- Example -->
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+$arrlength = count($cars);
+
+for($x = 0; $x < $arrlength; $x++) {
+  echo $cars[$x];
+  echo "<br>";
+}
+?>
