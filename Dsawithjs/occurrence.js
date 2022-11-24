@@ -18,4 +18,4 @@
     let  n = arr.length;
     let x = 2;
     let res = countOccurrences(arr, n, x);
-    console.log(res)
+    console.log(res) // 4
