@@ -53,3 +53,5 @@ setup
 
  how to know in which database i am 
  => SELECT database();
+
+ 
