@@ -24,3 +24,7 @@
  hbase 
  mongoDb
  cassandra
+
+
+ SQL => Structured Query Language and is used to query a Relational database.
+ MySQl = > MySQl is database.
