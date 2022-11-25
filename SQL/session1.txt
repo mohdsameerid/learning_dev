@@ -54,4 +54,15 @@ setup
  how to know in which database i am 
  => SELECT database();
 
- 
+ ///////////////////////////////////////////////////////////////////////////////
+
+ creating table 
+ => CREATE TABLE table_name
+    (
+        name varchar(50),
+        age INT,
+        salary INT
+    );
+
+    int for numeric 
+    varchar for string
