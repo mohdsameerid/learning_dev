@@ -1,0 +1,7 @@
+ what is database => A collection of data and hold this data in the form of tables
+
+ whats is table => table is an entity that hold the data in the form of rows and columns.
+
+ it is similar to excel spreadsheet.
+
+ (*) database provide us the capability to store data and manipulate this data. 
