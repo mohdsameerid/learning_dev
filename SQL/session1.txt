@@ -5,3 +5,22 @@
  it is similar to excel spreadsheet.
 
  (*) database provide us the capability to store data and manipulate this data. 
+
+
+
+ 2 type of database=>
+ ===================
+ 1) Relational database -> row & columns and also tables have relation between them.
+
+ Ex->
+ MySQl
+ SQl server
+ postreSql
+ mariaDB
+
+ 2) N0SQl database -> key value , document , graph
+
+ ex->
+ hbase 
+ mongoDb
+ cassandra
