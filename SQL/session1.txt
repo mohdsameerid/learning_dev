@@ -28,3 +28,28 @@
 
  SQL => Structured Query Language and is used to query a Relational database.
  MySQl = > MySQl is database.
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+ Installation => (groomide) on online
+
+setup 
+ 1) mysql-ctl cli (write this on terminal of the groomIDE)
+ 
+
+
+ /////////////////////////////////////////////////////////////
+ show database: 
+ => show databases ;
+
+ create database
+ => CREATE DATABASE trendytech;  
+
+ drop database
+ => drop database trendytech;
+
+ go to inside database
+ => USE trendytech;
+
+ how to know in which database i am 
+ => SELECT database();
