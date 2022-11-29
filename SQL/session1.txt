@@ -66,4 +66,5 @@ setup
 
     int for numeric 
     varchar for string
+    TimeStamp for storing Time
     
