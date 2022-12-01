@@ -68,5 +68,3 @@ setup
     varchar for string
     TimeStamp for storing Time
     decimal for storing floating point values
-
-
