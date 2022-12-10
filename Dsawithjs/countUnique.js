@@ -50,3 +50,6 @@ function countUniqueNumber(Array){
 }
 let res = countUniqueNumber([1,1,2,3,4,4,5,6,7,7,8,9,9,9]);
 console.log(res)
+
+let ress2 = countUniqueNumber([1,1,2,3,4,4,5,6,7,7,8]);
+console.log(ress2)
