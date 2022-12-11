@@ -3,8 +3,7 @@
  
  
     // Returns number of times x occurs in arr[0..n-1]
-    function countOccurrences(arr,n,x)
-    {
+    function countOccurrences(arr,n,x){
         let res = 0;
         for (let i=0; i<n; i++)
         {
