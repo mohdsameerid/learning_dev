@@ -30,3 +30,6 @@ console.log(res);  // true
 
 let res2 = anagram("helloj", "lleho");
 console.log(res2); // false
+
+let res3 = anagram("Samir", "Samer");
+console.log(res3); // false
