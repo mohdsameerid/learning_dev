@@ -44,4 +44,5 @@
 //  var a =20;
 // }
 
-// as 'var' declaration goes to 'Global environment' and sets in Memory context, it cannot be set using 'Block environment' value Hence:    Uncaught SyntaxError: Identifier 'a' has already been declared
+// as 'var' declaration goes to 'Global environment' and sets in Memory context, 
+// it cannot be set using 'Block environment' value Hence:    Uncaught SyntaxError: Identifier 'a' has already been declared
