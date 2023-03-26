@@ -27,4 +27,25 @@ let res = countingUniqueNumber([
 ]);
 console.log(res);
 
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+// (2) Approach
+//  i = 0;
+// loop ( j = 1 to Array.length )
+// if(Array[i] !== Array[j])
+// i++;
+// Array[i] = Array[j];
+
+function UniqueNumber(Array) {
+  let i = 0;
+  for (let j = 1; j < Array.length; j++) {
+    if (Array[i] !== Array[j]) {
+      i++;
+      Array[i] = Array[j];
+    }
+  }
+  return i + 1;
+}
+const res2 = UniqueNumber([1, 2, 3, 4, 5, 5, 5, 6, 7, 7, 8, 8, 8, 9, 9, 9, 89]);
+console.log(res2);
