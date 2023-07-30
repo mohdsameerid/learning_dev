@@ -9,14 +9,18 @@ function getMaxLength(arr, n){
         }
         else{
             count++;
-            result = Math.max(result, count);
+            result = findmax(result, count);
         }
     }
     return result;
 }
 
+function findmax(value1, value2){
+    return value1 > value2 ? value1 : value2;
+}
+
 // Driver code
-let arr = new Array(0,1,1,1,1,0,1,1,1,1,1,1,0,0);
+let arr = new Array(0,1,1,1,1,0,1,1,1,1,1,0,0);
 let n = arr.length;
 console.log(getMaxLength(arr, n));
 
