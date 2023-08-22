@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div onclick="{handleChange}">Hello click me</div>
+
+    <button class="incre" onclick="increment()">+</button>
+    <h1 class="count"></h1>
+    <button class="dcre" onclick="dcrement()">minus</button>
+    <button class="resest" onclick="reset()">Reset</button>
+    <script>
+      let count = document.querySelector(".count");
+      count.innerHTML = 0;
+
+      var number;
+      function increment() {
+        number = document.querySelector(".count").innerHTML;
+        number++;
+        count.innerHTML = number;
+      }
+      function dcrement() {
+        number = document.querySelector(".count").innerHTML;
+        if (number > 0) {
+          number--;
+          count.innerHTML = number;
+        }
+      }
+      function reset() {
+        count.innerHTML = 0;
+      }
+
+      //   var countNum;
+      //   // increment
+      //   let incbtn = document.querySelector(".incre");
+      //   incbtn.addEventListener("click", () => {
+      //     countNum = document.querySelector(".count").innerHTML
+      //     countNum++;
+      //     count.innerHTML = countNum;
+      //   });
+
+      //   // dcrement
+      //   document.querySelector(".dcre").addEventListener("click", () => {
+      //     countNum = document.querySelector(".count").innerHTML;
+      //     if (countNum > 0) {
+      //       countNum--;
+      //       count.innerHTML = countNum;
+      //     }
+      //   });
+
+      //   // Reset
+      //   document.querySelector(".resest").addEventListener("click", () => {
+      //     count.innerHTML = 0;
+      //   });
+    </script>
+  </body>
+</html>
